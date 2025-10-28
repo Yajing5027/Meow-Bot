@@ -13,6 +13,7 @@ def get_response(prompt,api_key):
     # send users request
     response = chain.invoke({'input':prompt})
     return response["response"]
-    
+
+# Test
 if __name__ == '__main__':
     print(get_response("use python print 1 to 10",'api-key'))
